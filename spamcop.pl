@@ -142,6 +142,7 @@ if (defined $foundLink) {
 # comment out or remove below lines if you expect quiet mode
 } else {
   print "\n@@ ".strftime('%F %T',localtime)."\n";
-  die ":: No report(s) found. Exit.\n";
+  print ":: No report(s) found. Exit.\n";
+  exit 0
 # comment out or remove above lines if you expect quiet mode
 }

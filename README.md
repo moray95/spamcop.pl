@@ -37,10 +37,15 @@ The script requires the Perl environment to work with the module WWW:Mechanize. 
 
 - download the script and save it to disk
 - give him the right to do (chmod + x)
-- Run the script providing the `USERNAME` and `PASSWORD` environment variables. These are the credentials of you Spamcop.net account.
- 
+- Run the script providing the `USERNAME` and `PASSWORD` environment variables. These are the credentials of your Spamcop.net account.
+
 To use the script, you must have a user account on the site and send e-mails Spamcop.net qualified by you as Spam in the form of attachments to the given Spamcop your individual email address.
 
+Or, if you prefer, you can use the Docker image:
+
+```sh
+docker run --rm -e USERNAME={username} -e PASSWORD={password} moray95/spamcop
+```
 
 USAGE
 =====
